@@ -1,10 +1,10 @@
 import React from "react";
 
-const PokeCard = ({profile}) => { 
+const PokeCard = ({pokemon}) => { 
     return(
         <div>
-            <img src={profile.url}/>
-            <p>{profile.name}</p>
+            <img alt={pokemon.name} src={pokemon.url}/>
+            <p>{pokemon.name}</p>
             <div>
                 <button>Adicionar</button>
                 <button>Ver detalhes</button>
