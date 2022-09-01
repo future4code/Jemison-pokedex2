@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import AppBar from "../AppBar/AppBar";
 import PokeCard from "./PokeCard";
 import axios from'axios';
+import { HomeContainer } from "./styled";
 
-function Home() {
+function Home({cart, setCart}) {
+    
     const [data, setData] = useState()
 
     useEffect(() => {
@@ -15,12 +17,20 @@ function Home() {
     })
     }, [])
 
+    const addToCart = (pokemon) => {
+        const newCart = [...cart, pokemon]
+        setCart(newCart)
+    }
+    console.log(cart)
+
     return(
         <div>
             <AppBar />
-            {data && data.map((pokemon, index) => {
-                return <PokeCard key={index} pokemon={pokemon}/>
-            })}
+            <HomeContainer>
+                {data && data.map((pokemon) => {
+                    return <PokeCard key={pokemon.name} pokemon={pokemon} addToCart={addToCart} />
+                })}
+            </HomeContainer>
         </div>
     )
 }
