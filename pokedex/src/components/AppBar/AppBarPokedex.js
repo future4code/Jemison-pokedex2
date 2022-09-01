@@ -1,15 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { goToHome } from "../../routes/coordinator";
+import { AppBarPokedexContainer } from "./styled";
 
 function AppBarPokedex() {
     const navigate = useNavigate();
 
     return (
-        <div>
+    <AppBarPokedexContainer>
         <button onClick={() => goToHome(navigate)}>Home</button>
         <h1>Pokemons</h1>
-    </div>
+    </AppBarPokedexContainer>
     )
 }
 

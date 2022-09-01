@@ -1,15 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { goToDetailsPage } from "../../routes/coordinator";
+import { PokeCardContainer } from "./styled";
 
-const PokeCard = ({profile}) => { 
+
+const PokeCard = ({pokemon, addToCart }) => { 
+    const navigate = useNavigate();
+
     return(
-        <div>
-            <img src={profile.url}/>
-            <p>{profile.name}</p>
+        <PokeCardContainer>
+            <img alt={pokemon.name} src={pokemon.url}/>
+            <h3>{pokemon.name}</h3>
             <div>
-                <button>Adicionar</button>
-                <button>Ver detalhes</button>
+                <button onClick={() => addToCart(pokemon)} >Adicionar</button>
+                <button onClick={() => goToDetailsPage(navigate)}>Ver detalhes</button>
             </div>
-        </div>
+        </PokeCardContainer>
     )
 }
 
