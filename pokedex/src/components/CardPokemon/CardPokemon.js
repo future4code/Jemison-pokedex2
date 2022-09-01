@@ -1,6 +1,7 @@
 import React from "react";
+import * as Stl from './CardPokemonStl.js'
 
-const PokeCard = ({profile}) => { 
+const CardPokemon = ({profile}) => { 
     return(
         <div>
             <img src={profile.url}/>
@@ -13,4 +14,4 @@ const PokeCard = ({profile}) => {
     )
 }
 
-export default PokeCard;
+export default CardPokemon;
