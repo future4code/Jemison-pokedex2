@@ -1,16 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { goToHome } from "../../routes/coordinator";
-import { AppBarPokedexContainer } from "./styled";
+import * as Stl from './AppBarPokedexStl.js'
 
 function AppBarPokedex() {
     const navigate = useNavigate();
 
     return (
-    <AppBarPokedexContainer>
+    <Stl.AppBarPokedexContainer>
         <button onClick={() => goToHome(navigate)}>Home</button>
         <h1>Pokemons</h1>
-    </AppBarPokedexContainer>
+    </Stl.AppBarPokedexContainer>
     )
 }
 

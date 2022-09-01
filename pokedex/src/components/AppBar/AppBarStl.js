@@ -8,5 +8,3 @@ export const AppBarContainer = styled.div`
     padding: 0 8px;
 
 `
-//AppBarPokedex
-

@@ -8,10 +8,10 @@ function AppBar () {
     const navigate = useNavigate();
 
     return(
-        <AppBarContainer>
+        <Stl.AppBarContainer>
             <button onClick={() => goToPokedex(navigate)}>Pokedex</button>
             <h1>Pokemons</h1>
-        </AppBarContainer>
+        </Stl.AppBarContainer>
     )
 }
 

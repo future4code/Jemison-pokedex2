@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AppBar from "../AppBar/AppBar";
 import PokeCard from "./PokeCard";
 import axios from'axios';
-import { HomeContainer } from "./styled";
+import * as Stl from './HomeStl.js'
 
 function Home({cart, setCart}) {
     
@@ -26,11 +26,11 @@ function Home({cart, setCart}) {
     return(
         <div>
             <AppBar />
-            <HomeContainer>
+            <Stl.HomeContainer>
                 {data && data.map((pokemon) => {
                     return <PokeCard key={pokemon.name} pokemon={pokemon} addToCart={addToCart} />
                 })}
-            </HomeContainer>
+            </Stl.HomeContainer>
         </div>
     )
 }

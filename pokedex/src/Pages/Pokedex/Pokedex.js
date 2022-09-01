@@ -1,7 +1,7 @@
 import React from "react";
 import AppBarPokedex from "../AppBar/AppBarPokedex";
-import PokeCardPokedex from "./PokeCardPokedex";
-import { PokedexContainer } from "./styled";
+import * as Stl from './PokedexStl.js'
+
 
 
 function Pokedex({cart, setCart}) {
@@ -17,13 +17,13 @@ const onClickRemove = (pokemon) => {
     return(
         <div>
             <AppBarPokedex/>
-            <PokedexContainer>
+            <Stl.PokedexContainer>
                 {cart.map((item) => {
-                    return (<PokeCardPokedex key={item.name} item={item} onClickRemove={onClickRemove}/>
-
-                    )
+                    return (
+                        <p>1</p>
+                     )
                 })}
-            </PokedexContainer>
+            </Stl.PokedexContainer>
             
         </div>
     )

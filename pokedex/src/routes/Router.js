@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from '../components/Home/Home';
-import Pokedex from '../components/Pokedex/Pokedex';
-import DetailsPage from '../components/DetailsPage/DetailsPage'
+import Home from '../Pages/Home/Home.js';
+import Pokedex from '../Pages/Pokedex/Pokedex.js';
+import DetailsPage from '../Pages/DetailsPage/DetailsPage.js'
 
 
 const Router = () => {
