@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../Pages/Home/Home.js';
 import Pokedex from '../Pages/Pokedex/Pokedex.js';
-import DetailsPage from '../Pages/DetailsPage/DetailsPage.js'
+import DetailsPage from '../Pages/DetailsPage/DetailsPage'
 
 
 const Router = () => {

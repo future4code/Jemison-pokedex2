@@ -1,5 +1,5 @@
 import React from "react";
-import AppBarDetailsPage from "../AppBar/AppBarDetailsPage";
+import AppBarDetailsPage from "../../components/AppBar/AppBarDetailsPage";
 
 function DetailsPage() {
     return(

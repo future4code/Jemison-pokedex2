@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { goToPokedex } from "../../routes/coordinator";
-import { AppBarContainer } from "./styled";
+import * as Stl from './AppBarStl'
 
 
 function AppBar () {
