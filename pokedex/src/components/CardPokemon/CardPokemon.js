@@ -2,7 +2,6 @@ import React from "react";
 import * as Stl from './CardPokemonStl.js'
 import { useNavigate } from "react-router-dom";
 import { goToDetailsPage } from "../../routes/coordinator";
-import { PokeCardContainer } from "./styled";
 
 const CardPokemon = ({profile}) => { 
     return(

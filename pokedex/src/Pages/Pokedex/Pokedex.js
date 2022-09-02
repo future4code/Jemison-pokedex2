@@ -1,5 +1,5 @@
 import React from "react";
-import AppBarPokedex from "../AppBar/AppBarPokedex";
+import AppBarPokedex from "../../components/AppBar/AppBarPokedex";
 import * as Stl from './PokedexStl.js'
 
 
