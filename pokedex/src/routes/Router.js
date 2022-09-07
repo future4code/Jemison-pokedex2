@@ -11,7 +11,7 @@ const Router = () => {
         <Routes>
             <Route path="/" element={<Home cart={cart} setCart={setCart} />}/>
             <Route path="/pokedex" element={<Pokedex cart={cart} setCart={setCart}/>}/>
-            <Route path="/detailspage" element={<DetailsPage/>}/>
+            <Route path="/detailspage/:id" element={<DetailsPage/>}/>
             <Route path="-1"/>
         </Routes>
     </BrowserRouter>
