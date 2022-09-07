@@ -19,7 +19,7 @@ const GlobalState = (props) => {
                 console.log(error.response.message)
             })
             setLoading(false)
-    }, [paginacao]);
+    }, []);
     const pokemonData = async (data) => {
         const loadingPokemon = await Promise.all(
             data.map(async(pokemon) => {
@@ -39,7 +39,7 @@ const GlobalState = (props) => {
 
    
     return (
-        <GlobalStateContext.Provider value={{pokemons, pokedex, lista, paginacao, setPaginacao, setLista, setPokemons, setPokedex}}>
+        <GlobalStateContext.Provider value={{pokemons, pokedex, lista, setLista, setPokemons, setPokedex}}>
             {props.children}
         </GlobalStateContext.Provider>
     )
