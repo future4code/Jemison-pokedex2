@@ -1,31 +1,20 @@
 import React from "react";
-import AppBarPokedex from "../../components/AppBar/AppBarPokedex";
+import { useNavigate } from "react-router-dom";
+import { goToHome } from "../../Routes/coordinator";
+import { goToDetailsPage } from "../../Routes/coordinator";
 import * as Stl from './PokedexStl.js'
 
 
 
-function Pokedex({cart, setCart}) {
+function Pokedex() {
 
-const onClickRemove = (pokemon) => {
-    const pokemonIndex = cart.findIndex((item) => item.name === pokemon.name)
-    const newCart = [...cart]
+    const navigate = useNavigate();
 
-    newCart.splice(pokemonIndex, 1)
-    setCart(newCart)
-}
-
-    return(
-        <div>
-            <AppBarPokedex/>
-            <Stl.PokedexContainer>
-                {cart.map((item) => {
-                    return (
-                        <p>1</p>
-                     )
-                })}
-            </Stl.PokedexContainer>
-            
-        </div>
+    return (
+        <Stl.Main>
+            <button onClick={() => goToHome(navigate)}>HomePage</button>
+            <button onClick={() => goToDetailsPage(navigate)}>Detalhes</button>
+        </Stl.Main>
     )
 }
 
