@@ -22,6 +22,7 @@ function Pokedex() {
         })
 
         setPokedex(removePokedex)
+       
 
     })
     const renderPokedex = pokedex.map((pokemon) => {
