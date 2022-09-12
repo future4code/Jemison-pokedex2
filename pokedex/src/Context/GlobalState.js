@@ -18,7 +18,7 @@ const GlobalState = (props) => {
 
     useEffect(() => {
 
-        
+   
         axios.get(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=${pageLimit}`)
             .then(response =>
                 pokemonData(response.data.results),

@@ -1,16 +1,19 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Alessandro Silvino
+- Leonardo Koga
+- Renato Alexandrini
 
-Link do Surge: www.link.com.br
+Link do Surge: berserk-blood.surge.sh
 
 O que funciona:
-- Item 1
-- Item 2
+- Os Pokemons são carregados na HomePage de 20 em 20 e possuem a opção de adicionar eles à Pokedex ou olhar os detalhes.
+- Quando adicionados à Pokedex, eles saem da Home Page, não podendo haver pokemons iguais na Pokedex.
+- Dentro da Pokedex, existe a opção de soltar o Pokemon, para que ele retorne à HomePage.
+- Existe um contador ha HomePage que indica quantos pokemons existem dentro da Pokedex.
+- Devido a estilização estar simples, a página se enconta responsiva.
 
 O que não funciona: 
-- Item 3
-- Item 4
+- A Estilização da página de detalhes do pokemons está incompleta.
+- A página está lenta pois uma das dependêcias do useEffect dentro do Global State, ela está sendo atualizada o tempo inteiro. Porém essa dependência faz com que a HomePage atualize quando um pokemon é enviado para a pokedex.

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import { goToHome } from "../../Routes/coordinator";
-import { goToPokedex } from "../../Routes/coordinator";
 import * as Stl from './DetailsPageStl.js';
+import HeaderHome from '../../Components/Header/HeaderHome.js';
+
 
 function DetailsPage() {
 
@@ -25,14 +25,16 @@ function DetailsPage() {
     }, ([navigate]))
 
     return (
-        <div>
+       
+            
             <Stl.Main>
-                <div>
-                    {selectedPokemon && selectedPokemon.name}
+                <HeaderHome/>
+                <Stl.Card>
+                    <Stl.Name>{selectedPokemon && selectedPokemon.name}</Stl.Name>
                     <img src={selectedPokemon && selectedPokemon.sprites && selectedPokemon.sprites.front_default} />
                     <img src={selectedPokemon && selectedPokemon.sprites && selectedPokemon.sprites.back_default} />
-                </div>
-                <div>
+                        
+                           <div>
                     <p>Stats</p>
                     <div>
                         {selectedPokemon && selectedPokemon.stats && selectedPokemon.stats.map((stat) => {
@@ -44,13 +46,13 @@ function DetailsPage() {
                         })}
                     </div>
                     <div>
-                        <h3>Types</h3>
+                        <h3>Tipos</h3>
                         <div>
                             {
                                 selectedPokemon && selectedPokemon.types && selectedPokemon.types.map((type) => {
                                     return (
                                         <div key={type.type.name}>
-                                            <strong> {type.type.name} </strong>
+                                            <strong>{type.type.name} </strong>
                                         </div>
                                     )
                                 })
@@ -58,13 +60,13 @@ function DetailsPage() {
                         </div>
                     </div>
                     <div>
-                        <h3>Moves</h3>
+                        <h3>Habilidades</h3>
                         <div>
                             {
-                                selectedPokemon && selectedPokemon.moves && selectedPokemon.moves.map((move) => {
+                                selectedPokemon && selectedPokemon.moves && selectedPokemon.abilities.map((abi) => {
                                     return (
-                                        <div key={move.move.name}>
-                                            <strong> {move.move.name} </strong>
+                                        <div key={abi.ability.name}>
+                                            <strong> {abi.ability.name} </strong>
                                         </div>
                                     )
                                 })
@@ -72,9 +74,9 @@ function DetailsPage() {
                         </div>
                     </div>
                 </div>
-
+                </Stl.Card>
             </Stl.Main>
-        </div>
+     
     )
 }
 export default DetailsPage;
