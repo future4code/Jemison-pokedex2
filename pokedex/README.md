@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# POKEDEX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://user-images.githubusercontent.com/102265620/189567216-631babec-166b-4105-90f2-e0f1e9f4b977.png" width="250px"/>
 
-## Available Scripts
+Nome dos integrantes: 
+- Alessandro Silvino
 
-In the project directory, you can run:
+- Leonardo Koga
+- Renato Alexandrini
 
-### `npm start`
+Link do Surge: berserk-blood.surge.sh
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O que funciona:
+- Os Pokemons são carregados na HomePage de 20 em 20 e possuem a opção de adicionar eles à Pokedex ou olhar os detalhes.
+- Quando adicionados à Pokedex, eles saem da Home Page, não podendo haver pokemons iguais na Pokedex.
+- Dentro da Pokedex, existe a opção de soltar o Pokemon, para que ele retorne à HomePage.
+- Existe um contador ha HomePage que indica quantos pokemons existem dentro da Pokedex.
+- Devido a estilização estar simples, a página se enconta responsiva.
 
-### `npm test`
+O que não funciona: 
+- A Estilização da página de detalhes do pokemons está incompleta.
+- A página está lenta pois uma das dependêcias do useEffect dentro do Global State, está sendo atualizada o tempo inteiro. Porém essa dependência faz com que a HomePage atualize quando um pokemon é enviado para a pokedex, não podendo ser removida para o funcionamento completo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://user-images.githubusercontent.com/102265620/189567791-dd5239fc-dd40-473e-b493-9e1b00b5d183.png" width="800px"/>
+<img src="https://user-images.githubusercontent.com/102265620/189568042-c45c8e5d-6fe2-494b-82d7-9901f69a5e10.png" width="300px"/>
+<img src="https://user-images.githubusercontent.com/102265620/189568247-8784447f-6c70-4dc1-b9a0-25e6ea87612b.png" width="800px"/>
+<img src="https://user-images.githubusercontent.com/102265620/189568385-db1c0194-fd75-4019-b211-41e7ca35d43b.png" width="300px"/>
+<img src="https://user-images.githubusercontent.com/102265620/189568478-3e8fe0a7-7785-45a7-9eed-c7995204d10e.png" width="300px"/>
