@@ -1,6 +1,6 @@
 # POKEDEX
 
-<img src="https://user-images.githubusercontent.com/102265620/189567216-631babec-166b-4105-90f2-e0f1e9f4b977.png" whidth="800px"/>
+<img src="https://user-images.githubusercontent.com/102265620/189567216-631babec-166b-4105-90f2-e0f1e9f4b977.png" whidth="300px"/>
 
 Nome dos integrantes: 
 - Alessandro Silvino
