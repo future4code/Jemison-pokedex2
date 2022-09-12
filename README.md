@@ -20,7 +20,7 @@ O que funciona:
 
 O que não funciona: 
 - A Estilização da página de detalhes do pokemons está incompleta.
-- A página está lenta pois uma das dependêcias do useEffect dentro do Global State, ela está sendo atualizada o tempo inteiro. Porém essa dependência faz com que a HomePage atualize quando um pokemon é enviado para a pokedex.
+- A página está lenta pois uma das dependêcias do useEffect dentro do Global State, está sendo atualizada o tempo inteiro. Porém essa dependência faz com que a HomePage atualize quando um pokemon é enviado para a pokedex, não podendo ser removida para o funcionamento completo.
 
 <img src="https://user-images.githubusercontent.com/102265620/189567791-dd5239fc-dd40-473e-b493-9e1b00b5d183.png" width="800px"/>
 <img src="https://user-images.githubusercontent.com/102265620/189568042-c45c8e5d-6fe2-494b-82d7-9901f69a5e10.png" width="300px"/>
