@@ -2,10 +2,12 @@
 
 Nome dos integrantes: 
 - Alessandro Silvino
+
 - Leonardo Koga
 - Renato Alexandrini
 
 Link do Surge: berserk-blood.surge.sh
+
 
 O que funciona:
 - Os Pokemons são carregados na HomePage de 20 em 20 e possuem a opção de adicionar eles à Pokedex ou olhar os detalhes.
@@ -17,3 +19,4 @@ O que funciona:
 O que não funciona: 
 - A Estilização da página de detalhes do pokemons está incompleta.
 - A página está lenta pois uma das dependêcias do useEffect dentro do Global State, ela está sendo atualizada o tempo inteiro. Porém essa dependência faz com que a HomePage atualize quando um pokemon é enviado para a pokedex.
+
